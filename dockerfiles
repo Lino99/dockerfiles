@@ -14,7 +14,7 @@ RUN apt-get clean
 
 RUN rm -rf /var/lib/apt/lists/*
 
-RUN pip install \
+RUN pip install -U \
 	git+https://github.com/Rapptz/discord.py@master#egg=discord.py[voice] \
 	imgurpython \
 	youtube_dl \
